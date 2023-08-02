@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="container">
+  <h1>Привет, это главная страница приложения!</h1>
+  <div id="objectsArea">
+    <!-- Object без iframe -->
+    <object id="object1" width="300" height="300"></object>
+
+    <!-- Object без iframe -->
+    <object id="object2" width="300" height="300"></object>
+  </div>
+  <div class="btn_main">
+    <button onclick="addIframeToObjects()">Добавить</button>
+  </div>
+
+</div>
+{% endblock %}
